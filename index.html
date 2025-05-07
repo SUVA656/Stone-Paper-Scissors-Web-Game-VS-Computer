@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎮 Rock, Paper, Scissors</h1>
+
+    <div class="target-score-container" id="target-score-container">
+      <label for="target-score">🎯 <span>Winning Score:</span></label>
+      <input type="number" id="target-score" min="1" value="3" />
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="score-section" class="score-container hidden">
+      <div id="user-score" class="score">User: 0</div>
+      <div id="computer-score" class="score">Computer: 0</div>
+    </div>
+
+    <div id="buttons-container" class="buttons-container hidden">
+      <button class="rps-btn" id="rock">🪨 Rock</button>
+      <button class="rps-btn" id="paper">📄 Paper</button>
+      <button class="rps-btn" id="scissors">✂️ Scissors</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="winner-message"></h2>
+      <button id="play-again-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
